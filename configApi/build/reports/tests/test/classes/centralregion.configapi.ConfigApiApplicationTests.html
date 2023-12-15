@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ConfigApiApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ConfigApiApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/centralregion.configapi.html">centralregion.configapi</a> &gt; ConfigApiApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.409s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.409s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>13:52:15.618 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [centralregion.configapi.ConfigApiApplicationTests]: ConfigApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:52:15.662 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration centralregion.configapi.ConfigApiApplication for test class centralregion.configapi.ConfigApiApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-05T13:52:15.876+09:00  INFO 64976 --- [adminApi] [    Test worker] c.configapi.ConfigApiApplicationTests    : Starting ConfigApiApplicationTests using Java 17.0.9 with PID 64976 (started by joyonghyeon in /Users/joyonghyeon/Desktop/rpms/configApi)
+2023-12-05T13:52:15.877+09:00  INFO 64976 --- [adminApi] [    Test worker] c.configapi.ConfigApiApplicationTests    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-12-05T13:52:16.224+09:00  INFO 64976 --- [adminApi] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2f00f2a2-2938-3bdb-b9e0-05b76601493c
+2023-12-05T13:52:16.560+09:00  INFO 64976 --- [adminApi] [    Test worker] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-12-05T13:52:16.593+09:00  WARN 64976 --- [adminApi] [    Test worker] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-12-05T13:52:16.604+09:00  INFO 64976 --- [adminApi] [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-12-05T13:52:16.648+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-12-05T13:52:16.651+09:00  INFO 64976 --- [adminApi] [    Test worker] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-12-05T13:52:16.667+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-12-05T13:52:16.667+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-12-05T13:52:16.667+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-12-05T13:52:16.667+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-12-05T13:52:16.667+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-12-05T13:52:16.667+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-12-05T13:52:16.667+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-12-05T13:52:16.865+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-12-05T13:52:16.867+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-12-05T13:52:16.868+09:00  INFO 64976 --- [adminApi] [    Test worker] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-12-05T13:52:16.870+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1701751936870 with initial instances count: 1
+2023-12-05T13:52:16.872+09:00  INFO 64976 --- [adminApi] [    Test worker] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMINAPI with eureka with status UP
+2023-12-05T13:52:16.872+09:00  INFO 64976 --- [adminApi] [    Test worker] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1701751936872, current=UP, previous=STARTING]
+2023-12-05T13:52:16.872+09:00  INFO 64976 --- [adminApi] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMINAPI/172.30.1.101:adminApi:9002: registering service...
+2023-12-05T13:52:16.880+09:00  INFO 64976 --- [adminApi] [    Test worker] c.configapi.ConfigApiApplicationTests    : Started ConfigApiApplicationTests in 1.159 seconds (process running for 1.634)
+2023-12-05T13:52:16.893+09:00  INFO 64976 --- [adminApi] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMINAPI/172.30.1.101:adminApi:9002 - registration status: 204
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 2023. 12. 5. 오후 1:52:17</p>
+</div>
+</div>
+</body>
+</html>

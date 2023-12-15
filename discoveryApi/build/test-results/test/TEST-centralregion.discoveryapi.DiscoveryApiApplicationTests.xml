@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="centralregion.discoveryapi.DiscoveryApiApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-05T04:13:59" hostname="joyonghyeon-ui-MacBookPro.local" time="0.413">
+  <properties/>
+  <testcase name="contextLoads()" classname="centralregion.discoveryapi.DiscoveryApiApplicationTests" time="0.413"/>
+  <system-out><![CDATA[13:13:58.016 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [centralregion.discoveryapi.DiscoveryApiApplicationTests]: DiscoveryApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:13:58.061 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration centralregion.discoveryapi.DiscoveryApiApplication for test class centralregion.discoveryapi.DiscoveryApiApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-05T13:13:58.277+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.d.DiscoveryApiApplicationTests         : Starting DiscoveryApiApplicationTests using Java 17.0.9 with PID 57848 (started by joyonghyeon in /Users/joyonghyeon/Desktop/rpms/discoveryApi)
+2023-12-05T13:13:58.278+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.d.DiscoveryApiApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2023-12-05T13:13:58.770+09:00  INFO 57848 --- [discoveryservice] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a990c593-c447-3cc7-882a-5a8687aabfb7
+2023-12-05T13:13:59.345+09:00  WARN 57848 --- [discoveryservice] [    Test worker] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-12-05T13:13:59.459+09:00  INFO 57848 --- [discoveryservice] [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-12-05T13:13:59.474+09:00  INFO 57848 --- [discoveryservice] [    Test worker] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-12-05T13:13:59.475+09:00  INFO 57848 --- [discoveryservice] [    Test worker] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2023-12-05T13:13:59.479+09:00  INFO 57848 --- [discoveryservice] [    Test worker] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1701749639479 with initial instances count: 0
+2023-12-05T13:13:59.500+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2023-12-05T13:13:59.501+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2023-12-05T13:13:59.587+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2023-12-05T13:13:59.587+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2023-12-05T13:13:59.587+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2023-12-05T13:13:59.587+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2023-12-05T13:13:59.646+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2023-12-05T13:13:59.649+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2023-12-05T13:13:59.650+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2023-12-05T13:13:59.695+09:00  INFO 57848 --- [discoveryservice] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-05T13:13:59.728+09:00  INFO 57848 --- [discoveryservice] [    Test worker] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERYSERVICE with eureka with status UP
+2023-12-05T13:13:59.735+09:00  INFO 57848 --- [discoveryservice] [      Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2023-12-05T13:13:59.735+09:00  INFO 57848 --- [discoveryservice] [      Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2023-12-05T13:13:59.735+09:00  INFO 57848 --- [discoveryservice] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2023-12-05T13:13:59.735+09:00  INFO 57848 --- [discoveryservice] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2023-12-05T13:13:59.736+09:00  INFO 57848 --- [discoveryservice] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2023-12-05T13:13:59.739+09:00  INFO 57848 --- [discoveryservice] [      Thread-12] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2023-12-05T13:13:59.747+09:00  INFO 57848 --- [discoveryservice] [    Test worker] c.d.DiscoveryApiApplicationTests         : Started DiscoveryApiApplicationTests in 1.625 seconds (process running for 2.12)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

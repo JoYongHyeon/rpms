@@ -1,0 +1,44 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: gatewayApi
+  cloud:
+    gateway:
+      default-filters:
+        - name: GlobalFilter
+          args:
+            baseMessage: Spring Cloud Gateway Global Filter
+            preLogger: true
+            postLogger: true
+      routes:
+        - id: adminApi-service
+#          uri: http://localhost:9002/
+          uri: lb://ADMINAPI
+          predicates:
+            - Path=/adminApi-service/**
+          filters:
+            - CustomFilter
+        - id: configApi-service
+#          uri: http://localhost:9003/
+          uri: lb://CONFIGAPI
+          predicates:
+            - Path=/configApi-service/**
+          filters:
+            - name: CustomFilter
+            - name: LoggingFilter
+              args:
+                baseMessage: Hi, there.
+                preLogger: true
+                postLogger: true
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
